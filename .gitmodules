@@ -1,0 +1,3 @@
+[submodule "Vendors/mage-sdk-cpp"]
+	path = Vendors/mage-sdk-cpp
+	url = git@github.com:Wizcorp/mage-sdk-cpp.git
