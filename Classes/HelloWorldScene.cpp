@@ -2,6 +2,8 @@
 
 USING_NS_CC;
 
+using namespace mage;
+
 Scene* HelloWorld::createScene()
 {
     // 'scene' is an autorelease object
@@ -54,7 +56,24 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
 
-    auto label = LabelTTF::create("Hello World", "Arial", 24);
+	mage::RPC mage("game", "domain.com");
+	Json::Value params;
+	Json::Value res;
+	std::string text = "";
+
+	try {
+		res = mage.Call("users.create", params);
+		text += "Call succeded: ";
+		text += res["id"].asString();
+	} catch (mage::MageRPCError e) {
+		text += "RPC Error: ";
+		text += e.what();
+	} catch (mage::MageErrorMessage e) {
+		text += "Call failed: ";
+		text += e.code();
+	}
+
+    auto label = LabelTTF::create(text, "Arial", 24);
 
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,

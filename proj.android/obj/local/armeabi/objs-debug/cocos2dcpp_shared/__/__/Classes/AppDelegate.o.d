@@ -310,7 +310,53 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/AppDelegate.o: \
  /Users/mt/Sources/mage-sdk-cpp-cocos2dx/proj.android/../cocos2d/cocos/./deprecated/CCString.h \
  /Users/mt/Sources/mage-sdk-cpp-cocos2dx/proj.android/../cocos2d/cocos/./deprecated/CCNotificationCenter.h \
  /Users/mt/Sources/mage-sdk-cpp-cocos2dx/proj.android/../cocos2d/cocos/./deprecated/CCDeprecated.h \
- jni/../../Classes/HelloWorldScene.h
+ jni/../../Classes/HelloWorldScene.h \
+ jni/../../Vendors/mage-sdk-cpp/src/mage.h \
+ jni/../../Vendors/mage-sdk-cpp/src/exceptions.h \
+ /Users/mt/android-ndk/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/rpc.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/server.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/rpcprotocolserver.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/specificationparser.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/procedure.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/json.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/autolink.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/config.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/value.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/forwards.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/reader.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/features.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/writer.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/specification.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/exception.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/errors.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/abstractauthenticator.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/abstractrequesthandler.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/serverconnector.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/client.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/clientconnector.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/rpcprotocolclient.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/value.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/httpserver.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/mongoose.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/../serverconnector.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/httpclient.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/../clientconnector.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/../exception.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curl.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curlver.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curlbuild.h \
+ /Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/sys/socket.h \
+ /Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/linux/socket.h \
+ /Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/asm/socket.h \
+ /Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/asm/sockios.h \
+ /Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/linux/sockios.h \
+ /Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/linux/uio.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curlrules.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/easy.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/multi.h \
+ jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curl.h \
+ jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/specificationwriter.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -935,3 +981,95 @@ jni/../../Classes/AppDelegate.h:
 /Users/mt/Sources/mage-sdk-cpp-cocos2dx/proj.android/../cocos2d/cocos/./deprecated/CCDeprecated.h:
 
 jni/../../Classes/HelloWorldScene.h:
+
+jni/../../Vendors/mage-sdk-cpp/src/mage.h:
+
+jni/../../Vendors/mage-sdk-cpp/src/exceptions.h:
+
+/Users/mt/android-ndk/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/rpc.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/server.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/rpcprotocolserver.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/specificationparser.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/procedure.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/json.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/autolink.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/config.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/value.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/forwards.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/reader.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/features.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/writer.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/specification.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/exception.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/errors.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/abstractauthenticator.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/abstractrequesthandler.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/serverconnector.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/client.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/clientconnector.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/rpcprotocolclient.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/json/value.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/httpserver.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/mongoose.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/../serverconnector.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/httpclient.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/../clientconnector.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/connectors/../exception.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curl.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curlver.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curlbuild.h:
+
+/Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/sys/socket.h:
+
+/Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/linux/socket.h:
+
+/Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/asm/socket.h:
+
+/Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/asm/sockios.h:
+
+/Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/linux/sockios.h:
+
+/Users/mt/android-ndk/platforms/android-9/arch-arm/usr/include/linux/uio.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curlrules.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/easy.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/multi.h:
+
+jni/../../Vendors/mage-sdk-cpp/platforms/externals/curl/include/android/curl/curl.h:
+
+jni/../../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src/jsonrpc/specificationwriter.h:
