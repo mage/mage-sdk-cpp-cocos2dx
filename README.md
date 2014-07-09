@@ -21,6 +21,7 @@ git commit -m "First commit"
 mkdir -p ./Vendors
 git submodule add git@github.com:mage/mage-sdk-cpp.git ./Vendors/mage-sdk-cpp
 pushd ./Vendors/mage-sdk-cpp
+git submodule update --init
 make platforms
 popd
 ```
