@@ -53,11 +53,24 @@ bool HelloWorld::init()
 	#
 	# Use MAGE!
 	#
-	mage::RPC mage("game", "172.16.13.2");
+	mage::RPC mage("game", "localhost:8080");
 # [... snip ...]
 ```
 
+Note that this sample code does quite a bit more than what is described here.
+It demonstrate, for instance, some possible flow control using MAGE SDK's asynchronous
+callback calls. So you will want to have a look at the code in [./Classes](./Classes) to
+really understand the power this SDK can bring you.
+
 ### Android
+
+First, we need to modify `./proj.android/jni/Application.mk`
+so that it use C++ static for STL and add `-DHTTP_CONNECTOR` to the `APP_CPPFLAGS`:
+
+```Makefile
+APP_STL := c++_static
+APP_CPPFLAGS := -frtti -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -std=c++11 -DHTTP_CONNECTOR -fsigned-char
+```
 
 In `./proj.android/jni/Android.mk`,
 add the following at the very top of the file:
@@ -97,11 +110,19 @@ use of exceptions:
 LOCAL_CPPFLAGS := -fexceptions
 ```
 
-Finally, add the following where you add your main application static libraries:
+Add the following where you add your main application static libraries:
 
 ```Makefile
 LOCAL_WHOLE_STATIC_LIBRARIES += curl
 LOCAL_WHOLE_STATIC_LIBRARIES += mage-sdk
+```
+
+Finally, it seems that older API versions complain about
+[missing atomic libs at link time](https://code.google.com/p/android/issues/detail?id=68779
+). To solve this issue, let's make sure it is added to our `LOCAL_LDLIBS`:
+
+```
+LOCAL_LDLIBS += -latomic
 ```
 
 You should be good to go!
@@ -135,6 +156,17 @@ $(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation
 $(SRCROOT)/../Vendors/mage-sdk-cpp/src/
 $(SRCROOT)/../Vendors/mage-sdk-cpp/vendor/libjson-rpc-cpp/src
 $(SRCROOT)/../Vendors/mage-sdk-cpp/platforms/externals/curl/include/ios
+```
+
+Finally, in `./proj.ios_mac/mage-sdk-cpp-cocos2dx.xcodeproj/project.pbxproj`, please make sure to add `"HTTP_CONNECTOR=1"` to all instances of `GCC_PREPROCESSOR_DEFINITIONS`. It should then look like the following:
+
+```
+GCC_PREPROCESSOR_DEFINITIONS = (
+	USE_FILE32API,
+	CC_TARGET_OS_IPHONE,
+	"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+	"HTTP_CONNECTOR=1",
+);
 ```
 
 You should be done! Press play and try to build to a device.
